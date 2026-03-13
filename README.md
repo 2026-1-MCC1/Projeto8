@@ -17,7 +17,7 @@ Vide tutoriais do PI.
 ## Integrantes: 
 <a href="https://www.linkedin.com/in/gustavo-matsune-37b1613b7/">Gustavo Kenji Matsune</a>, 
 <a href="https://www.linkedin.com/in/victorbarq/">Maria Eduarda da Silva Souza</a>, 
-<a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>,  
+<a href="https://www.linkedin.com/in/pedro-d-54a67b383/">Pedro Henrique Dutra Silva</a>,  
 <a href="https://www.linkedin.com/in/stefany-anne-9b7924347/">Stefany Anne</a>
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Dr. Victor Von Doom</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Saitama</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Strange</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Yoda</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Gero</a>
