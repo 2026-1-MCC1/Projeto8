@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private Image imageHealthBar;
+
+    /*void Start()
     {
         
     }
@@ -12,5 +14,10 @@ public class HealthBar : MonoBehaviour
     void Update()
     {
         
+    }*/
+
+    public void alterHealthBar(int currentLife, int maxLife) // declarando variáveis para existirem dentro do contexto (código)
+    {
+        imageHealthBar.fillAmount = (float) currentLife / maxLife; //cálculo para definir o quanto a preencher da barra de vida
     }
 }
