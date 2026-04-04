@@ -1,9 +1,3 @@
-```sh
-Utilize o site <https://www.toptal.com/developers/gitignore> para gerar seu arquivo gitignore e apague este campo.
-
-Vide tutoriais do PI.
-```
-
 # FECAP - Fundação de Comércio Álvares Penteado
 
 <p align="center">
@@ -15,12 +9,17 @@ Vide tutoriais do PI.
 ## Nome do Grupo
 
 ## Integrantes: 
-<a href="https://www.linkedin.com/in/gustavo-matsune-37b1613b7/">Gustavo Kenji Matsune</a>, 
-<a href="https://www.linkedin.com/in/victorbarq/">Maria Eduarda da Silva Souza</a>, 
-<a href="https://www.linkedin.com/in/pedro-d-54a67b383/">Pedro Henrique Dutra Silva</a>,  
-<a href="https://www.linkedin.com/in/stefany-anne-9b7924347/">Stefany Anne</a>
+<a href="https://www.linkedin.com/in/gustavo-matsune-37b1613b7/">Gustavo Kenji Matsune</a>, <br>
+<a href="https://www.linkedin.com/in/maria-eduarda-da-silva-souza-114236313/">Maria Eduarda da Silva Souza</a>, <br>
+<a href="https://www.linkedin.com/in/pedro-d-54a67b383/">Pedro Henrique Dutra Silva</a>, <br>
+<a href="https://www.linkedin.com/in/stefany-anne-9b7924347/">Stefany Anne</a> <br>
 
-## Professores Orientadores: <a href="https://www.linkedin.com/in/victorbarq/">Dr. Victor Von Doom</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Saitama</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Strange</a>, <a href="https://www.linkedin.com/in/victorbarq/">Me. Yoda</a>, <a href="https://www.linkedin.com/in/victorbarq/">Dr. Gero</a>
+## Professores Orientadores: <br>
+<a href="https://www.linkedin.com/in/victorbarq/">Victor Bruno Alexander Rosetti de Quiroz</a>, <br>
+<a href="https://www.linkedin.com/in/adriano-valente/">Adriano Felix Valente</a>, <br>
+<a href="https://www.linkedin.com/in/eduardo-savino/">Eduardo Savino Gomes</a>, <br>
+<a href="https://www.linkedin.com/in/remuniz/">Renada Muniz do Nascimento</a>, <br>
+<a href="https://www.linkedin.com/in/luisspires/">Luis Pires</a>
 
 ## Descrição
 
@@ -72,12 +71,7 @@ Há também 4 pastas que seguem da seguinte forma:
 
 <b>Android:</b>
 
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
+No momento sem suporte para essa plataforma.
 
 <b>Windows:</b>
 
