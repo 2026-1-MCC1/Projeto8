@@ -24,17 +24,14 @@
 ## Descrição
 
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
+<img src="imagens/readme/gifCapaJogo.gif" alt="Guardiões de Yby" border="0">
   Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
 </p>
 
-
-De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-<br><br>
-Meu projeto ajuda estudantes FECAP a configurarem seus githubs.
-<br><br>
-May the force be with you!
-<br><br>
+<p align="justify">
+Nome do jogo, é um jogo na qual a trama principal se passa em uma terra indígena na qual sofre com invasões de garimpeiros e criminosos, que acabam afetando a integridade e a segurança da aldeia, da floresta e dos animais. <br> 
+Assim, ao iniciar o jogo o jogador assume o papel de um guerreiro da tribo indígena que irá lutar contra as invasões desses criminosos. Logo, a missão principal é fazer patrulhas pelo território e destuir os equipamentos como tratores, escavadoras, caminhões sem ser detectado pelos invasores.
+</p>
 
 ## 🛠 Estrutura de pastas
 
