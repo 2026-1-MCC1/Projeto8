@@ -1,0 +1,51 @@
+using System.Runtime.Intrinsics.Arm;
+
+int energia = 100;
+string SN = "";
+
+/*while (energia > 0)
+{
+    Console.WriteLine("Você acorda no laboratório, sozinho(a)! Todos seus colegas de sala sairam e você está preso." +
+        "Deseja voltar a dormir e esperar até o dia seguinte ou tentar sair?");
+    SN = Console.ReadLine();
+    if( SN == sim || SN == s || SN == S || SN == sim)
+    {
+        Console.WriteLine("Você resolveu tentar sair.");
+    }
+
+
+}*/
+
+// Fase 1 - Acordar ou voltar a dormir
+// Fase 2 - Alunos ficaram até mais tarde
+// Fase 3 - Zelador
+
+    Console.WriteLine("Você acorda no laboratório, sozinho(a)! Todos seus colegas de sala sairam e você está preso." +
+        "Deseja voltar a dormir e esperar até o dia seguinte ou tentar sair?");
+    SN = Console.ReadLine();
+if (SN == "sim" || SN == "s" || SN == "S" || SN == "Sim")
+{
+    Console.WriteLine("Você resolveu tentar sair para voltar pra casa.");
+    Console.WriteLine("Então você levanta da cadeira que estava e anda em direção a porta. Logo em seguida começa a bater e gritar na porta pedindo ajuda.");
+    Console.WriteLine("Quando de repente alguns alunos passam em frente a porta.");
+    Console.WriteLine("Pedir ajuda escrevendo no papel ou não?");
+    if (SN == "sim" || SN == "s" || SN == "S" || SN == "Sim")
+    {
+        Console.WriteLine("Você decide escrever no papel e passar a folha debaixo da porta, porém os alunos passam reto e consequentemente sua tentativa foi falha.");
+        Console.WriteLine("Após algumas horas, você ouve passos e pensa que é o segurança, e você decide se jogar contra a porta. Por conta do barulho ele se aproxima e pergunta se há alguem dentro da sala.");
+        Console.WriteLine("Desejar continuar fazendo barulho e começar a gritar ou não?");
+        if (SN == "sim" || SN == "s" || SN == "S" || SN == "Sim")
+        {
+            Console.WriteLine("O segurança abre a porta, você o agradece e consegue sair da sala. Você vai poder dormir na sua cama hoje!");
+        }
+        else
+        {
+            energia -= 75;
+            Console.WriteLine("Você perde a oportunidade de ir para casa.");
+        }
+    }
+    else {
+        energia -= 25;
+        Console.WriteLine("Você resolveu voltar a dormir e esperar o dia seguinte.");
+    }
+}
