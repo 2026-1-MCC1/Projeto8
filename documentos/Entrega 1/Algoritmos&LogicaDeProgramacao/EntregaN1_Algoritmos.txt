@@ -1,0 +1,86 @@
+﻿int energia = 100;
+string SN = "";
+
+while (energia > 0)
+{
+    // Fase 1 - começo da história
+    Console.WriteLine("Você acorda no laboratório, sozinho(a)! Todos seus colegas de sala saíram e você está preso. " +
+        "Deseja tentar sair ou voltar a dormir? (sim/não)");
+    Console.WriteLine("Energia restante: " + energia);
+    SN = Console.ReadLine();
+
+    // se escolher tentar sair
+    if (SN == "sim" || SN == "s" || SN == "S" || SN == "Sim")
+    {
+        Console.WriteLine("Você resolveu tentar sair para voltar pra casa.");
+        Console.WriteLine("Então você levanta da cadeira e anda em direção à porta. Logo em seguida começa a bater e gritar pedindo ajuda.");
+        Console.WriteLine("Quando de repente alguns alunos passam em frente à porta.");
+        Console.WriteLine("Pedir ajuda escrevendo no papel ou não? (sim/não)");
+        Console.WriteLine("Energia restante: " + energia);
+        SN = Console.ReadLine();
+
+        // se decidir pedir ajuda com o papel
+        if (SN == "sim" || SN == "s" || SN == "S" || SN == "Sim")
+        {
+            Console.WriteLine("Você decide escrever no papel e passar a folha debaixo da porta, porém os alunos passam reto. Tentativa falha.");
+        }
+        else
+        {
+            // perde energia por não tentar ajudar
+            energia -= 50;
+
+            // impede energia de ficar negativa
+            energia = Math.Max(0, energia);
+
+            Console.WriteLine("Você resolveu não pedir ajuda e ficou esperando.");
+            Console.WriteLine("Energia restante: " + energia);
+        }
+
+        // só continua se ainda tiver energia
+        if (energia > 0)
+        {
+            Console.WriteLine("Após algumas horas, você ouve passos. Parece ser o segurança.");
+            Console.WriteLine("Você se joga contra a porta e ele se aproxima perguntando se há alguém.");
+            Console.WriteLine("Deseja continuar fazendo barulho e gritar? (sim/não)");
+            SN = Console.ReadLine();
+
+            // final bom
+            if (SN == "sim" || SN == "s" || SN == "S" || SN == "Sim")
+            {
+                Console.WriteLine("O segurança abre a porta, você o agradece e consegue sair. Você vai dormir na sua cama hoje!");
+                Console.WriteLine("Energia restante: " + energia);
+
+                break; // sai do loop (jogo termina)
+            }
+            else
+            {
+                // perde toda energia (final ruim)
+                energia -= 100;
+
+                // garante que não fique negativo
+                energia = Math.Max(0, energia);
+
+                Console.WriteLine("Você perde a oportunidade de ir para casa.");
+                Console.WriteLine("Energia restante: " + energia);
+            }
+        }
+    }
+    else
+    {
+        // escolha ruim logo no começo (perde tudo)
+        energia -= 100;
+
+        // garante que não fique negativo
+        energia = Math.Max(0, energia);
+
+        Console.WriteLine("Você resolveu voltar a dormir e esperar o dia seguinte.");
+        Console.WriteLine("Energia restante: " + energia);
+    }
+
+    // verifica se acabou a energia
+    if (energia <= 0)
+    {
+        Console.WriteLine("Você ficou sem energia... Game Over!");
+        break; // encerra o jogo
+    }
+}
