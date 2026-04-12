@@ -1,60 +1,39 @@
 using UnityEngine;
 public class Life : MonoBehaviour
 {
-    [SerializeField] private int currentLife;
-    [SerializeField] private int maxLife = 100;
-    [SerializeField] private int minLife = 0;
-
-    private Vector3 spawnPosition;
-
+    private int currentLife;
+    private int maxLife = 100;
     [SerializeField] private HealthBar healthBar;
 
-    #region Declaração de valores da vida e posição do player
     void Start()
     {
         currentLife = maxLife;
-        spawnPosition = transform.position;
 
-        // Seção Vida
-
-        if (currentLife > maxLife)
-        {
-            currentLife = maxLife;
-        }
-        if (currentLife <= minLife)
-        {
-            Respawn();
-        }
+        /* if (currentLife > maxLife)
+         {
+             currentLife = maxLife;
+         }
+         if (currentLife < 0)
+         {
+             currentLife = 0;
+            // Respawn();
+         }*/
 
         healthBar.alterHealthBar(currentLife, maxLife);
     }
 
-    #endregion
-
+    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetButtonDown("Fire1"))
         {
-            TakeDamage(10);
+            TakeDamage();
         }
     }
 
-    private void TakeDamage(int damage)
+    private void TakeDamage()
     {
         currentLife -= 10;
-
         healthBar.alterHealthBar(currentLife, maxLife);
     }
-
-    
-
-    #region Respawn do Player
-    private void Respawn()
-    {
-        Destroy(gameObject);
-        transform.position = spawnPosition;
-        currentLife = maxLife;
-    }
-
-    #endregion
 }
