@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+ï»¿using System.Collections.Generic;
 using UnityEngine;
 
 public class Equipment : MonoBehaviour
@@ -6,36 +6,52 @@ public class Equipment : MonoBehaviour
     public GameObject equipmentPrefab;
 
     private List<GameObject> equipmentList = new List<GameObject>();
-    //uma lista para armazenar os equipamentos que irão spawnar
+    //uma lista para armazenar os equipamentos que irao spawnar
+
     private List<Vector3> equipmentPositions = new List<Vector3>();
-    //uma lista para armazenar a posição dos equipamentos já spawnados
-    void Update()
+    //uma lista para armazenar a posiÃ§Ã£o dos equipamentos ja spawnados
+
+    void Start()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            SpawnEquipment();
-        }
-        //SpawnEquipment();
+        SpawnEquipment();
     }
 
     private void SpawnEquipment()
     {
-        int equipmentQuantidity = Random.Range(2, 5);
+        int equipmentQuantidity = Random.Range(2, 5); // gera um num aleatorio que sera a quantidade de equipamentos
 
-        for (int i = 0; i < equipmentQuantidity; i++)
+        for (int i = 0; i < equipmentQuantidity; i++) // looping que controla quantos equipamentos serao criados
         {
-            Vector3 randomSpawnPosition = new Vector3(Random.Range(1, 3), 2, Random.Range(0, 2));
+            Vector3 randomSpawnPosition = new Vector3(Random.Range(1, 3), 2, Random.Range(0, 2)); 
+            // gera posicoes aleatorias, X; Y; Z, usando Random.Range (inclusivo, exclusivo)
 
-            /* vai spawnar aleatoriamente com base nos valores x,y e z (Vector3): sendo x incluindo 1 e
-            excluindo o 3 (ou seja, vai spawnar entre 1 e 2), y sendo 2 e z sendo entre 0 e 1. */
+            int attempt = 0;
 
-            while (equipmentPositions.Contains(randomSpawnPosition)) ; // enquanto a lista de posições de equipamentos conter a posição aleatória
+            // enquanto a posicao ja estiver ocupada (tiver a posicao aleatoria armazenada) E ainda houver tentativas disponÃ­veis (menor que 5)
+            while (equipmentPositions.Contains(randomSpawnPosition) && attempt < 5) 
+            {
+                randomSpawnPosition = new Vector3(Random.Range(1, 3), 2, Random.Range(0, 2));
+                // gera uma nova posicao
+                attempt++;
+                //soma as tentativas
+            }
 
-            equipmentPositions.Add(randomSpawnPosition); // adiciona a posição aleatória na lista de posições dos equipamentos
+            //se cada tentativa de um novo equipamento a posicao estiver ocupada (dentro da lista de posicoes aleatorias)
+            if (equipmentPositions.Contains(randomSpawnPosition))
+            {
+                Debug.Log("Sem posiÃ§Ã£o livre"); // acabou as posicoes
+                return; // termina tudo (SpawnEquipment)
+            }
 
-            GameObject newEquipment = Instantiate(equipmentPrefab, randomSpawnPosition, Quaternion.identity); // após a 
+            //entao se o if nao for atendido ele ira:
+
+            equipmentPositions.Add(randomSpawnPosition); // adiciona a posicao aleatoria na lista de posicoes dos equipamentos
+
+            GameObject newEquipment = Instantiate(equipmentPrefab, randomSpawnPosition, Quaternion.identity);
+            // criar um novo equipamento
 
             equipmentList.Add(newEquipment);
+            // adiciona o equipamento a lista
         }
     }
 }
