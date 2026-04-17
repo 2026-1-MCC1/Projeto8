@@ -6,7 +6,7 @@
 
 # O Último Guardião
 
-## Nome do Grupo
+## Nome do Grupo - EcoNexus
 
 ## Integrantes: 
 <a href="https://www.linkedin.com/in/gustavo-matsune-37b1613b7/">Gustavo Kenji Matsune</a>, <br>
