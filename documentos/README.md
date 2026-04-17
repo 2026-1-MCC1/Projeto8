@@ -28,7 +28,7 @@ Protótipo do Jogo - [Arquivo Unity](https://github.com/2026-1-MCC1/Projeto8/tre
 Entrega do GDD - [Arquivo GDD](https://github.com/2026-1-MCC1/Projeto8/tree/main/documentos/Entrega%201/ProjetoInterdisciplinar_JogosDigitais)
 <br><br>
 
-## Entrega 2
+## Entrega 2 - 11/05/2026
 
 ### Algoritmos e Lógica de Programação
 
