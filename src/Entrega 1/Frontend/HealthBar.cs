@@ -4,20 +4,22 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] private Image imageHealthBar;
+    private Transform myCamera; // faz referência a câmera
 
-    /*void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
-        
-    }*/
+        transform.LookAt(transform.position + myCamera.forward);
+    }
 
-    public void alterHealthBar(int currentLife, int maxLife) // declarando variáveis para existirem dentro do contexto (código)
+    private void Awake()
     {
-        imageHealthBar.fillAmount = (float) currentLife / maxLife; //cálculo para definir o quanto a preencher da barra de vida
+        myCamera = Camera.main.transform;
+
+    }
+
+    public void alterHealthBar(int currentLife, int maxLife) // declarando vari veis para existirem dentro do contexto (c digo)
+    {
+        imageHealthBar.fillAmount = (float)currentLife / maxLife; //c lculo para definir o quanto a preencher da barra de vida
     }
 }
