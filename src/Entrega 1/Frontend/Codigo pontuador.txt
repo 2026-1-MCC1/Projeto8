@@ -1,0 +1,58 @@
+
+Script: GameManager (Pontuador)
+C#
+using UnityEngine;
+using TMPro; // Necessário se estiver usando TextMeshPro para o texto da UI
+
+public class HouseManager : MonoBehaviour
+{
+    // Variáveis estáticas permitem que outros scripts acessem esta instância facilmente
+    public static HouseManager instance;
+
+    [SerializeField] private int totalHouses; // quantidade total de casas na cena
+    [SerializeField] private TextMeshProUGUI houseText; // referencia ao texto na tela (UI)
+
+    void Awake()
+    {
+        // Define a instância para que as casas a encontrem
+        instance = this;
+    }
+
+    void Start()
+    {
+        // Busca todas as casas na cena que possuem o script 'EquipmentLife'
+        totalHouses = FindObjectsOfType<EquipmentLife>().Length;
+        
+        UpdateUI(); // Atualiza o texto logo no inicio
+    }
+
+    // Metodo chamado para subtrair uma casa da contagem
+    public void HouseDestroyed()
+    {
+        totalHouses--; // diminui 1 do total
+        UpdateUI(); // atualiza a interface
+        
+        Debug.Log("Menos uma casa! Restam: " + totalHouses);
+    }
+
+    // Metodo para atualizar o componente de texto na tela
+    private void UpdateUI()
+    {
+        if (houseText != null)
+        {
+            houseText.text = "Casas Restantes: " + totalHouses;
+        }
+    }
+}
+
+
+dentro do equipamentlife 
+
+// Dentro do metodo TakeDamage do seu script EquipmentLife:
+if (currentLife <= 0) 
+{
+    // AVISA O PONTUADOR ANTES DE MORRER
+    HouseManager.instance.HouseDestroyed(); 
+    
+    Destroy(gameObject);
+}
