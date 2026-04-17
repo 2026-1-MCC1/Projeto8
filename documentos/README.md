@@ -1,31 +1,56 @@
 # Entregas do PI
+<p>Arquivo README para facilitar a localização dos arquivos.</p>
 
-## Entrega 1
-<br><br>
+## Entrega 1 - 13/04/2026
 
-### Disciplina 1
+### Algoritmos e Lógica de Programação
 
-<b>ALUNO 1- [Trabalho/Documento](https://github.com/fecaphub/Template_PI/blob/main/documentos/Entrega%201/Disciplina%201/Venha%20para%20a%20FECAP!.txt)</b>
-<br><br>
-<b>ALUNO 1- [Trabalho/Documento](https://github.com/fecaphub/Template_PI/blob/main/documentos/Entrega%201/Disciplina%201/Venha%20para%20a%20FECAP!.txt)</b>
-<br><br>
-<b>ALUNO 1- [Trabalho/Documento](https://github.com/fecaphub/Template_PI/blob/main/documentos/Entrega%201/Disciplina%201/Venha%20para%20a%20FECAP!.txt)</b>
+Algoritmo do jogo em C# - [Algoritmo](https://github.com/2026-1-MCC1/Projeto8/tree/main/documentos/Entrega%201/Algoritmos%26LogicaDeProgramacao)
 <br><br>
 
-### Disciplina 2
+### Cálculo 1 
 
-<b>ALUNO 1- [Trabalho/Documento](https://github.com/fecaphub/Template_PI/blob/main/documentos/Entrega%201/Disciplina%201/Venha%20para%20a%20FECAP!.txt)</b>
-<br><br>
-<b>ALUNO 1- [Trabalho/Documento](https://github.com/fecaphub/Template_PI/blob/main/documentos/Entrega%201/Disciplina%201/Venha%20para%20a%20FECAP!.txt)</b>
-<br><br>
-<b>ALUNO 1- [Trabalho/Documento](https://github.com/fecaphub/Template_PI/blob/main/documentos/Entrega%201/Disciplina%201/Venha%20para%20a%20FECAP!.txt)</b>
+Documento com cálculos que estão no jogo - [Trabalho/Documento](https://github.com/2026-1-MCC1/Projeto8/tree/main/documentos/Entrega%201/Calculo1)
 <br><br>
 
-### Disciplina 3
+### Ética e Pensamento Computacional
 
-<b>ALUNO 1- [Trabalho/Documento](https://github.com/fecaphub/Template_PI/blob/main/documentos/Entrega%201/Disciplina%201/Venha%20para%20a%20FECAP!.txt)</b>
+Entrega do Artigo - [Trabalho/Documento](https://github.com/2026-1-MCC1/Projeto8/tree/main/documentos/Entrega%201/Etica%26PensamentoComputacional)
 <br><br>
-<b>ALUNO 1- [Trabalho/Documento](https://github.com/fecaphub/Template_PI/blob/main/documentos/Entrega%201/Disciplina%201/Venha%20para%20a%20FECAP!.txt)</b>
+
+### Jogos Digitais e Sistemas Interativos
+
+Protótipo do Jogo - [Arquivo Unity](https://github.com/2026-1-MCC1/Projeto8/tree/main/documentos/Entrega%201/JD%26SistemasDigitaisInterativos)
 <br><br>
-<b>ALUNO 1- [Trabalho/Documento](https://github.com/fecaphub/Template_PI/blob/main/documentos/Entrega%201/Disciplina%201/Venha%20para%20a%20FECAP!.txt)</b>
+
+### Projeto Interdisciplinar - PI
+
+Entrega do GDD - [Arquivo GDD](https://github.com/2026-1-MCC1/Projeto8/tree/main/documentos/Entrega%201/ProjetoInterdisciplinar_JogosDigitais)
+<br><br>
+
+## Entrega 2
+
+### Algoritmos e Lógica de Programação
+
+Trabalho/Documento - [Trabalho/Documento](https://github.com/2026-1-MCC1/Projeto8/tree/main/documentos/Entrega%202/Algoritmos%26LogicaDeProgramacao)
+<br><br>
+
+### Cálculo 1 
+
+Trabalho/Documento - [Trabalho/Documento](https://github.com/2026-1-MCC1/Projeto8/tree/main/documentos/Entrega%202/Calculo1)
+<br><br>
+
+### Ética e Pensamento Computacional
+
+Trabalho/Documento - [Trabalho/Documento](https://github.com/2026-1-MCC1/Projeto8/tree/main/documentos/Entrega%202/Etica%26PensamentoComputacional)
+<br><br>
+
+### Jogos Digitais e Sistemas Interativos
+
+Trabalho/Documento - [Trabalho/Documento](https://github.com/2026-1-MCC1/Projeto8/tree/main/documentos/Entrega%202/JD%26SistemasDigitaisInterativos)
+<br><br>
+
+### Projeto Interdisciplinar - PI
+
+Trabalho/Documento - [Trabalho/Documento](link)
 <br><br>
