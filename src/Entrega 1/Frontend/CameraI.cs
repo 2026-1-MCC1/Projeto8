@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ControleCilindro : MonoBehaviour
+public class CameraI : MonoBehaviour
 {
     public float velocidade = 5.0f;
     public float sensibilidadeMouse = 2.0f;
@@ -12,20 +12,20 @@ public class ControleCilindro : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
 
-        // Verificação de erro amigável
+        // Verificacao de erro amigavel
         if (cameraTransform == null)
         {
-            Debug.LogError("Ei! Você esqueceu de arrastar a Câmera para o campo Camera Transform no script!");
+            Debug.Log("Ei! Você esqueceu de arrastar a Câmera para o campo Camera Transform no script!");
         }
     }
 
     void Update()
     {
-        // 1. ROTAÇÃO HORIZONTAL (Gira o cilindro todo)
+        // 1. ROTACAO HORIZONTAL (Gira o cilindro todo)
         float mouseX = Input.GetAxis("Mouse X") * sensibilidadeMouse;
         transform.Rotate(Vector3.up * mouseX);
 
-        // 2. ROTAÇÃO VERTICAL (Gira apenas a câmera)
+        // 2. ROTACAO VERTICAL (Gira apenas a camera)
         float mouseY = Input.GetAxis("Mouse Y") * sensibilidadeMouse;
         rotacaoX -= mouseY;
         rotacaoX = Mathf.Clamp(rotacaoX, -90f, 90f);
@@ -33,11 +33,11 @@ public class ControleCilindro : MonoBehaviour
 
         if (cameraTransform != null)
         {
-            // Usando localEulerAngles para garantir a sobreposição de valores
+            // Usando localEulerAngles para garantir a sobreposicao de valores
             cameraTransform.localEulerAngles = new Vector3(rotacaoX, 0, 0);
         }
 
-        // 3. MOVIMENTAÇÃO (Rente ao chão)
+        // 3. MOVIMENTACAO (Rente ao chao)
         float moverFrente = Input.GetAxis("Vertical");
         float moverLado = Input.GetAxis("Horizontal");
 
