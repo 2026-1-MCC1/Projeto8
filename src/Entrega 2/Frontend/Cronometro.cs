@@ -1,10 +1,10 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using TMPro;
 
 public class Cronometro : MonoBehaviour
 {
     [Header("Configuracoes de Tempo")]
-    // O tempo total que o jogo terá (150 segundos = 2m 30s)
+    // O tempo total que o jogo terï¿½ (150 segundos = 2m 30s)
     public float tempoInicial = 150f;
 
     [Header("Componentes de UI")]
@@ -15,24 +15,24 @@ public class Cronometro : MonoBehaviour
 
     void Start()
     {
-        tempoAtual = tempoInicial;  // Começa o cronômetro com o valor total (150)
-        cronometroRodando = true;   // Ativa o cronômetro para começar a contar
-        AtualizarTexto();           // Chama a função para mostrar o tempo inicial na tela
+        tempoAtual = tempoInicial;  // Comeï¿½a o cronï¿½metro com o valor total (150)
+        cronometroRodando = true;   // Ativa o cronï¿½metro para comeï¿½ar a contar
+        AtualizarTexto();           // Chama a funï¿½ï¿½o para mostrar o tempo inicial na tela
     }
 
     void Update()
     {
-        // Se o cronômetro estiver pausado, ele "sai" do Update aqui e não faz nada
+        // Se o cronï¿½metro estiver pausado, ele "sai" do Update aqui e nï¿½o faz nada
         if (!cronometroRodando) return;
 
-        // Time.deltaTime é o tempo exato que passou entre um frame e outro.
+        // Time.deltaTime ï¿½ o tempo exato que passou entre um frame e outro.
         // Subtrai esse valor do nosso tempo atual.
         tempoAtual -= Time.deltaTime;
 
         // Verifica se o tempo chegou ou passou de zero
         if (tempoAtual <= 0f)
         {
-            tempoAtual = 0f;           // Garante que não apareçam números negativos
+            tempoAtual = 0f;           // Garante que nï¿½o apareï¿½am nï¿½meros negativos
             cronometroRodando = false; // Para a contagem
             TempoEsgotado();           // Avisa que o tempo acabou
         }
@@ -41,13 +41,13 @@ public class Cronometro : MonoBehaviour
         AtualizarTexto();
     }
 
-    // Função responsável por transformar segundos 
+    // Funï¿½ï¿½o responsï¿½vel por transformar segundos 
     void AtualizarTexto()
     {
-        // Divide o tempo por 60 para achar os minutos (pega só a parte inteira)
+        // Divide o tempo por 60 para achar os minutos (pega sï¿½ a parte inteira)
         int minutos = Mathf.FloorToInt(tempoAtual / 60f);
 
-        // O resto da divisão por 60 são os segundos
+        // O resto da divisï¿½o por 60 sï¿½o os segundos
         int segundos = Mathf.FloorToInt(tempoAtual % 60f);
 
         // Atualiza o componente de texto. 
