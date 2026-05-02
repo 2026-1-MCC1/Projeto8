@@ -24,7 +24,7 @@
 ## Descrição
 
 <p align="center">
-<img src="imagens/readme/gifCapaJogo.gif" alt="O Último Guardião" border="0">
+<img src="imagens/readme/v2_CapaJogo.gif" alt="O Último Guardião" border="0">
 Video Autoral
 </p>
 
@@ -128,9 +128,9 @@ Coloque código do prompt de comnando se for necessário
 
 <p style="text-align: center;">
 
-<a href="https://github.com/2026-1-MCC1/Projeto8">O Último Guardião</a> © 2026 <br>
+<a href="https://github.com/2026-1-MCC1/Projeto8"><p align="center">O Último Guardião</a> © 2026 <br>
 by <a href="https://github.com/2026-1-MCC1/Projeto8">Gustavo Kenji Matsune, Maria Eduarda da Silva Souza, Pedro Henrique Dutra Silva, Stefany Anne Apaza de Freitas</a> <br> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a> <br>
-<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"> </p>
 
 </p>
 
@@ -144,3 +144,4 @@ Aqui estão as referências usadas no projeto.
 4. <https://freesound.org/>
 5. <https://www.toptal.com/developers/gitignore>
 6. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
+7. Plataforma utilizada para criação da capa, GIFs: <https://giphy.com/>
