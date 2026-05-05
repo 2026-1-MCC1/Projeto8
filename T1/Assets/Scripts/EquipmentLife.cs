@@ -1,43 +1,54 @@
+using TMPro; // Importante para usar o TextMeshPro
 using UnityEngine;
 
 public class EquipmentLife : MonoBehaviour
 {
+    [SerializeField] private int maxLife = 200;
+    [SerializeField] private HealthBar healthBar;
+    [SerializeField] private int pointsValue = 50; // Quanto de pontuação esse objeto vale
 
-    // Variáveis do tipo serializado. Permite visualizar no inspetor mesmo que esteja privado.
-    [SerializeField] private int maxLife = 200; // vida maxima do equipamento de 200
-  
-    [SerializeField] private HealthBar healthBar; // faz referencia a barra de vida
+    private int currentLife;
 
-    private int currentLife; // vida atual
+    // Variável estática para manter o score entre diferentes instâncias
+    public static int totalScore = 0;
 
     void Start()
     {
-        currentLife = maxLife; // vida atual = vida max (200)
-        healthBar.alterHealthBar(currentLife, maxLife); // altera a barra de vida com base nas variaveis acima
+        currentLife = maxLife;
+        healthBar.alterHealthBar(currentLife, maxLife);
     }
 
-    private void OnTriggerStay(Collider other) // ao detectar colisao ativa o gatilho
+    private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && Input.GetKey(KeyCode.Mouse0)) //verifica se o objeto dentro do colisor possui a tag "Player"
+        if (other.CompareTag("Player") && Input.GetKey(KeyCode.Mouse0))
         {
-            TakeDamage(15); //toma 15 de dano
+            TakeDamage(15);
         }
     }
 
-    private void TakeDamage(int damage) //metodo de tomar dano, o dano é no tipo inteiro
+    private void TakeDamage(int damage)
     {
-        currentLife -= damage; // o dano desconta da vida atual
+        if (currentLife <= 0) return; // Evita processar dano se já estiver morto
 
-        if (currentLife < 0) // se a vida atual e menor que 0
-            currentLife = 0; // vida atual = 0
+        currentLife -= damage;
 
-        healthBar.alterHealthBar(currentLife, maxLife); // altera a barra de vida
+        if (currentLife < 0) currentLife = 0;
 
-        if (currentLife <= 0) // se a vida for igual ou menor que 0, destroi o obj
+        healthBar.alterHealthBar(currentLife, maxLife);
+
+        if (currentLife <= 0)
         {
+            AwardPoints();
             Destroy(gameObject);
         }
+    }
 
-        Debug.Log("Silencio, pq maquina n fala");
+    private void AwardPoints()
+    {
+        totalScore += pointsValue;
+        Debug.Log("Pontuação Atual: " + totalScore);
+
+        // Aqui chamaremos a atualização da UI (ver passo abaixo)
+        ScoreManager.instance.UpdateScoreUI();
     }
 }
