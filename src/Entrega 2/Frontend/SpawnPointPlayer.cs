@@ -3,13 +3,15 @@ using UnityEngine;
 public class SpawnPointPlayer : MonoBehaviour
 {
     public GameObject playerPrefab;
-    private void Start()
+
+    void Awake()
     {
         SpawnPlayer();
     }
 
     public void SpawnPlayer()
     {
-        Instantiate(playerPrefab, transform.position, Quaternion.identity);
+        GameObject NewPlayer = Instantiate(playerPrefab, transform.position, Quaternion.identity);
+        NewPlayer.tag = "Player";
     }
 }
