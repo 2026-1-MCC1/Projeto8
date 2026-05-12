@@ -41,38 +41,33 @@ Sua missão principal é patrulhar a região e sabotar os equipamentos dos invas
 ├── Raiz
 │
 ├── Documentos
-│   ├── entrega 1
+│   ├── Entrega 1
 │   │   ├── entrega Algoritmos e Lógica de Programação
 │   │   ├── entrega Cálculo I
 │   │   ├── entrega Ética e Pensamento Computacional
 │   │   ├── entrega Jogos Digitais e Sistemas Digitais Interativos
 │   │   └── entrega Projeto Interdisciplinar Jogos Digitais
-│   └── entrega 2
-│       ├── entrega Algoritmos e Lógica de Programação
-│       ├── entrega Cálculo I
-│       ├── entrega Ética e Pensamento Computacional
-│       ├── entrega Jogos Digitais e Sistemas Digitais Interativos
-│       └── entrega Projeto Interdisciplinar
+│   └── Entrega 2
+│   |    ├── entrega Algoritmos e Lógica de Programação
+│   |    ├── entrega Cálculo I
+│   |    ├── entrega Ética e Pensamento Computacional
+│   |    ├── entrega Jogos Digitais e Sistemas Digitais Interativos
+│   |    └── entrega Projeto Interdisciplinar
+|   ├── Banner 
+|   ├── Projeto de Extensão
+|   └── readme.md
 │
 ├── Imagens
-|   ├── imgJogo
-|   |   ├── BarraDeVida
-|   |       ├── Equipamentos
-|   |       └── Player
-│   |
 |   └── readme
+|       ├── gifCapaJogo
+|       └── v2_CapaJogo
 |
 ├── Src
-│   └── oUltimoGuardiao
-│       ├── Assets
-│       ├── Packages
-│       ├── ProjectSettings
-│       ├── .gitignore
-│       └── .vsconfig
+|   ├── Entrega 1
+│   └── Entrega 2
 |
-├── Executável
 |  
-└── readme.md
+└── READ.md
 
 ```
 
@@ -92,39 +87,16 @@ Há também 4 pastas que seguem da seguinte forma:
 
 ## 🛠 Instalação
 
-<b>Android:</b>
-
-No momento sem suporte para essa plataforma.
-
 <b>Windows:</b>
 
-Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
+Não há instalação! Apenas executável! <br>
+Acesse o link a seguir, baixe o zip e extraia/descompacte. Logo em seguida abra a pasta e clique em T1: 
+> https://projeto08.itch.io/o-ultimo-guardiao
 
 <b>HTML:</b>
 
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
-
-## 💻 Configuração para Desenvolvimento
-
-Link no itch.io: https://projeto08.itch.io/o-ultimo-guardiao
-
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
-
-Para abrir este projeto você necessita das seguintes ferramentas:
-
--<a href="https://godotengine.org/download">GODOT</a>
-
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
-```
+Não há instalação! Acesse o link a seguir e divirta-se! <br>
+> https://projeto08.itch.io/o-ultimo-guardiao
 
 ## 📋 Licença/License
 
