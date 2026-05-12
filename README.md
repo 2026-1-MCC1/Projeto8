@@ -112,6 +112,8 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 ## 💻 Configuração para Desenvolvimento
 
+Link no itch.io: https://projeto08.itch.io/o-ultimo-guardiao
+
 Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
 
 Para abrir este projeto você necessita das seguintes ferramentas:
@@ -128,7 +130,7 @@ Coloque código do prompt de comnando se for necessário
 
 <p style="text-align: center;">
 
-<a href="https://github.com/2026-1-MCC1/Projeto8"><p align="center">O Último Guardião</a> © 2026 <br>
+<a href="https://github.com/2026-1-MCC1/Projeto8"><p align="center">O Último Guardião</a> © 2026, FECAP <br>
 by <a href="https://github.com/2026-1-MCC1/Projeto8">Gustavo Kenji Matsune, Maria Eduarda da Silva Souza, Pedro Henrique Dutra Silva, Stefany Anne Apaza de Freitas</a> <br> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a> <br>
 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"> </p>
 
